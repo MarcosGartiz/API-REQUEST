@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block title %}
+Index
+{% endblock %}
+{% block content %}
+<div>
+    {% if data.country_name =="Mexico" %}
+    <h1>Hola Mundo</h1>
+    {% elif data.country_name =="Brazil" %}
+    <h1>No hay website para ti carnal</h1>
+    {% elif data.country_name =="United States" %}
+    <h1>Hello World</h1>
+    {% else %}
+    <h1>Fuera de aqui negro</h1>
+    {% endif %}
+</div>
+{% endblock content %}
